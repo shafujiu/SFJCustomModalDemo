@@ -100,9 +100,16 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:.3];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissViewControllerAnimated:completion:)];
+    [self.view addGestureRecognizer:tap];
+    
     [self.view addSubview:self.contentView];
 }
 
+
+- (void)p_dismiss{
+    
+}
 
 - (UIView *)contentView{
     
@@ -113,12 +120,16 @@
         CGFloat y = (CGRectGetHeight(self.view.bounds) - h) * .5;
         _contentView = [[UIView alloc] initWithFrame:CGRectMake(x, y, w, h)];
         _contentView.backgroundColor = [UIColor whiteColor];
+//        _contentView.userInteractionEnabled = YES;
+        
+//        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(p_dismiss)];
+//        [_contentView addGestureRecognizer:tap];
     }
     return _contentView;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark -

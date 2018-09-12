@@ -29,21 +29,21 @@
 
 - (IBAction)show:(id)sender {
     
-//    SFJAlertController *alert = [[SFJAlertController alloc] init];
-    SFJMenuController *vc = [SFJMenuController menuControllerAtPoint:CGPointMake(300, 80)];
-    
-    SFJMenuAction *action1 = [SFJMenuAction actionWithTitle:@"action1" iconName:nil action:^{
-        NSLog(@"action1");
-    }];
-    SFJMenuAction *action2 = [SFJMenuAction actionWithTitle:@"action2" iconName:nil action:^{
-        NSLog(@"action2");
-    }];
-    SFJMenuAction *action3 = [SFJMenuAction actionWithTitle:@"action3" iconName:nil action:^{
-        NSLog(@"action3");
-    }];
-    [vc addAction: action1];
-    [vc addAction: action2];
-    [vc addAction: action3];
+    SFJAlertController *vc = [[SFJAlertController alloc] init];
+//    SFJMenuController *vc = [SFJMenuController menuControllerAtPoint:CGPointMake(300, 80)];
+//
+//    SFJMenuAction *action1 = [SFJMenuAction actionWithTitle:@"action1" iconName:nil action:^{
+//        NSLog(@"action1");
+//    }];
+//    SFJMenuAction *action2 = [SFJMenuAction actionWithTitle:@"action2" iconName:nil action:^{
+//        NSLog(@"action2");
+//    }];
+//    SFJMenuAction *action3 = [SFJMenuAction actionWithTitle:@"action3" iconName:nil action:^{
+//        NSLog(@"action3");
+//    }];
+//    [vc addAction: action1];
+//    [vc addAction: action2];
+//    [vc addAction: action3];
     [self presentViewController:vc animated:YES completion:nil];
 }
 

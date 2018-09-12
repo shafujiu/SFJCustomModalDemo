@@ -17,6 +17,8 @@
 		95DB948E2148A5F0002FAA0A /* SFJMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB948D2148A5F0002FAA0A /* SFJMenuController.m */; };
 		95DB94972148B055002FAA0A /* SFJMoreMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95DB94962148B055002FAA0A /* SFJMoreMenuCell.xib */; };
 		95DB949A2148B05D002FAA0A /* SFJMoreMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB94982148B05D002FAA0A /* SFJMoreMenuCell.m */; };
+		95DB949D21490ED9002FAA0A /* SFJTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB949C21490ED9002FAA0A /* SFJTableController.m */; };
+		95DB94A021492978002FAA0A /* SFJRefreshTopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB949F21492978002FAA0A /* SFJRefreshTopController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		95DB94962148B055002FAA0A /* SFJMoreMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SFJMoreMenuCell.xib; sourceTree = "<group>"; };
 		95DB94982148B05D002FAA0A /* SFJMoreMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFJMoreMenuCell.m; sourceTree = "<group>"; };
 		95DB94992148B05D002FAA0A /* SFJMoreMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFJMoreMenuCell.h; sourceTree = "<group>"; };
+		95DB949B21490ED9002FAA0A /* SFJTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFJTableController.h; sourceTree = "<group>"; };
+		95DB949C21490ED9002FAA0A /* SFJTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFJTableController.m; sourceTree = "<group>"; };
+		95DB949E21492978002FAA0A /* SFJRefreshTopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFJRefreshTopController.h; sourceTree = "<group>"; };
+		95DB949F21492978002FAA0A /* SFJRefreshTopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFJRefreshTopController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,10 @@
 				81F2372D2148259500E554FA /* SFJAlertController.m */,
 				95DB948C2148A5F0002FAA0A /* SFJMenuController.h */,
 				95DB948D2148A5F0002FAA0A /* SFJMenuController.m */,
+				95DB949E21492978002FAA0A /* SFJRefreshTopController.h */,
+				95DB949F21492978002FAA0A /* SFJRefreshTopController.m */,
+				95DB949B21490ED9002FAA0A /* SFJTableController.h */,
+				95DB949C21490ED9002FAA0A /* SFJTableController.m */,
 				95DB94992148B05D002FAA0A /* SFJMoreMenuCell.h */,
 				95DB94982148B05D002FAA0A /* SFJMoreMenuCell.m */,
 				95DB94962148B055002FAA0A /* SFJMoreMenuCell.xib */,
@@ -256,9 +266,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F236FF2148257900E554FA /* ViewController.m in Sources */,
+				95DB949D21490ED9002FAA0A /* SFJTableController.m in Sources */,
 				81F2370A2148257C00E554FA /* main.m in Sources */,
 				95DB949A2148B05D002FAA0A /* SFJMoreMenuCell.m in Sources */,
 				81F2372E2148259500E554FA /* SFJAlertController.m in Sources */,
+				95DB94A021492978002FAA0A /* SFJRefreshTopController.m in Sources */,
 				81F236FC2148257900E554FA /* AppDelegate.m in Sources */,
 				95DB948E2148A5F0002FAA0A /* SFJMenuController.m in Sources */,
 			);
