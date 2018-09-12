@@ -42,3 +42,22 @@
     [vc addAction: action3];
     [self presentViewController:vc animated:YES completion:nil];
 ```
+
+# SFJRefreshTopController
+
+通过下拉的方式modal 到新的控制器
+
+```
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView{
+    CGFloat offsetY = scrollView.contentOffset.y;
+    if (offsetY < kMinOffsetY) {
+        NSLog(@"到新的页面");
+        SFJRefreshTopController *vc = [[SFJRefreshTopController alloc] init];
+        [self presentViewController:vc animated:YES completion:^{
+            [scrollView setContentOffset:CGPointMake(0, 0) animated:NO];
+        }];
+        [scrollView setContentOffset:CGPointMake(0, offsetY) animated:NO];
+    }
+    NSLog(@"offsetY = %f", offsetY);
+}
+```
