@@ -112,7 +112,7 @@
         CGFloat x = 15;
         CGFloat y = (CGRectGetHeight(self.view.bounds) - h) * .5;
         _contentView = [[UIView alloc] initWithFrame:CGRectMake(x, y, w, h)];
-        _contentView.backgroundColor = [UIColor purpleColor];
+        _contentView.backgroundColor = [UIColor whiteColor];
     }
     return _contentView;
 }
